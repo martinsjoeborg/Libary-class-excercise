@@ -3,9 +3,12 @@ export default class _Contacts {
         this.name = name;
         this.phone = phone;
         this.email = email;
-
     }
 
-    
+    showContact(){
+        return this.name;
+    }
+
+
 
 }

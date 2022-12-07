@@ -4,7 +4,7 @@ export default class Library {
         this.address = address;
         this.contacts = [];
         this.books = [];
-
+    
     }
 
     addBook(newBook) {

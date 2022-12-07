@@ -4,7 +4,10 @@ export default class Book {
         this.pages = pages;
         this.writer = writer;
         this.status = status;
+    }
 
+    showName(){
+        return this.title;
     }
 
     showInfo() {
