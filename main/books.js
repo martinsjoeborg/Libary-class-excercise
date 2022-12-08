@@ -11,7 +11,7 @@ export default class Book {
     }
 
     showInfo() {
-        let bookInfo = this.title + " is a book writen by " + this.writer + " and is " + this.pages + " pages long. " + this.status + ".";
+        let bookInfo = this.title + " is writen by " + this.writer + " and is " + this.pages + " pages long. " + this.status + ".";
         return bookInfo;
     }
 

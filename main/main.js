@@ -9,6 +9,8 @@ let btn = document.getElementById('btn');
 let conBtn = document.getElementById('conBtn');
 let bookList = document.getElementById('bookList');
 let contactList = document.getElementById('contactList');
+let li = document.getElementById('li');
+let listBtn = document.getElementById('listBtn');
 
 
 
@@ -27,12 +29,10 @@ smartLib.addContact(new _Contacts("Jasmine Bookahol", "+67 3885 64", "jasmineflo
 smartLib.addContact(new _Contacts("Ernest Hemmingway", "+66 666 666", "erniethebeast@smartlib.com"));
 smartLib.addContact(new _Contacts("John Doe", "+00 000 000", "johndoe@smartlib.com"));
 
-
-
-//h1.insertAdjacentHTML('afterbegin', "<h1>" + smartLib.name + "</h1>");
+//functions
 function seeBooks(){
     smartLib.books.map(yep =>{
-        bookList.insertAdjacentHTML('afterbegin', "<li>" + yep.showName() + "</li>");
+        li.insertAdjacentHTML('afterbegin', "<li>" + yep.showName() + "<button>" + "See Info" + "</button>" + "<button>" + "Borrow" + "</button>" +"</li>");
     });
     
     bookList.hidden = false;
@@ -44,9 +44,7 @@ function seeContacts(){
         contactList.insertAdjacentHTML('afterbegin', "<li>" + yup.showContact() + "</li>");
     });
     
-
     contactList.hidden = false;
-
 }
 
 h1.innerHTML = smartLib.name;
